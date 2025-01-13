@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>Roads managed by Transport Victoria</title>
+	
+	
+	
+<link href="leaflet.css" rel="stylesheet" type="text/css">
+		 <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="leaflet.js"
+     crossorigin=""></script>
+	
+	
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js" integrity="sha512-Abr21JO2YqcJ03XGZRPuZSWKBhJpUAR6+2wH5zBeO4wAw4oksr8PRdF+BKIRsxvCdq+Mv4670rZ+dLnIyabbGw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="leaflet.css" rel="stylesheet" type="text/css">
+	<style>
+		html, body {
+			height: 100%;
+			margin: 0;
+		}
+		.leaflet-container {
+			height: 812px;
+			width: 375px;
+			max-width: 100%;
+			max-height: 100%;
+		}
+	</style>
+
+	<style>body { padding: 0; margin: 0; } #map { height: 100%; width: 100vw; }</style>
+	
+</head>
+
+
+<body>
+	
+	<div id='map'></div>
+	
+	<script src="roadsgeo.js" type="text/javascript"></script>
+	
+	
+
+<script>
+	
+
+	
+	const map = L.map('map').setView([-38.1980, 142.3935], 10);
+
+	const tiles = L.tileLayer('https://tile.jawg.io/jawg-light/{z}/{x}/{y}{r}.png?access-token={accessToken}', {
+		accessToken: 'fyr0Yf0EsGAqo2LTxZ5nEjl36yNS4cSm6x5h4ZBPOoDkyja7Mh7dl9aNBFfQef4Y',
+							  maxZoom: 19,
+		
+	}).addTo(map);
+
+
+	
+	function onEachFeature(feature, layer) {
+		let popupContent = `<h2>${feature.properties.RD_NAME}</h2><p>${feature.properties.Rcategorie}, managed by Transport Victoria</p>`;
+
+		if (feature.properties && feature.properties.RD_NAME) {
+			popupContent;
+		}
+
+		layer.bindPopup(popupContent);
+	}
+var myStyle = {
+    "color": "grey",
+    "weight": 0.02,
+    "opacity": 0.35
+		
+};
+	
+	var geojsonLayerBoundary = new L.GeoJSON.AJAX("MoyneB.geojson", {
+  interactive:false,  style: myStyle
+}); 
+	
+	
+geojsonLayerBoundary.addTo(map);
+	
+
+		
+	
+	
+	
+	
+	
+	
+	
+	const LinesLayer = L.geoJSON([Roads, Highways],{
+		
+		onEachFeature,
+		
+		style: function(feature) {
+      var ftype = feature.properties.DEC_TYPE;
+      if (ftype  === "ROAD") {
+        return {
+          color: "red",
+			"weight": 2,
+			
+        }; 
+      }
+      else if (ftype  === "HIGHWAY") {
+        return {
+          color: "black",
+			"weight": 4,
+        };
+            } else {
+        return {
+          color: "black"
+        }
+      }
+    },
+		
+	}).addTo(map);
+	
+	
+
+</script>
+	
+</body>
+</html>
