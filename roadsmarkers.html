@@ -63,25 +63,14 @@
   opacity: 0.7;
 
 }
-		.legend i2 {
 
-  width: 20px;
-  height: 10px;
-  float: left;
-  margin: 8px 8px 0 0;
-  opacity: 0.7;
-
-}
 
 .legend i.icon {
   background-size: 20px;
   background-color: rgba(255, 255, 255, 1);
 }
 	
-		.legend i2.icon {
-  background-size: 20px;
-  background-color: rgba(255, 255, 255, 1);
-}
+
 	
 	</style>
 	
@@ -176,7 +165,7 @@ legend.onAdd = function (map) {
     var div = L.DomUtil.create('div', 'info legend');
   div.innerHTML += "<h4>Legend</h4>";
   div.innerHTML += '<i style="background: #FF0000"></i><span>Arterial road</span><br>';
-  div.innerHTML += '<i2 style="background: #000000"></i><span>Highway</span><br>';
+  div.innerHTML += '<i style="background: #000000"></i><span>Highway</span><br>';
    
 
     return div;

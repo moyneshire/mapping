@@ -15700,7 +15700,7 @@ var Highways = {
       "type": "Feature",
       "properties": {
         "DEC_TYPE": "HIGHWAY",
-"Rcategorie": "Highway",
+"Rcategorie": "Arterial Road (classified as a Highway)",
 
 
         "RD_NAME": "Great Ocean Road"
@@ -17717,7 +17717,7 @@ var Highways = {
       "type": "Feature",
       "properties": {
         "DEC_TYPE": "HIGHWAY",
-"Rcategorie": "Highway",
+"Rcategorie": "Arterial Road (classified as a Highway)",
 
 
         "RD_NAME": "Great Ocean Road"
@@ -19002,7 +19002,7 @@ var Highways = {
       "type": "Feature",
       "properties": {
         "DEC_TYPE": "HIGHWAY",
-"Rcategorie": "Highway",
+"Rcategorie": "Arterial Road (classified as a Highway)",
 
 
         "RD_NAME": "Great Ocean Road"
@@ -19059,7 +19059,7 @@ var Highways = {
       "type": "Feature",
       "properties": {
         "DEC_TYPE": "HIGHWAY",
-"Rcategorie": "Highway",
+"Rcategorie": "Arterial Road (classified as a Highway)",
 
 
         "RD_NAME": "Great Ocean Road"
@@ -19108,7 +19108,7 @@ var Highways = {
       "type": "Feature",
       "properties": {
         "DEC_TYPE": "HIGHWAY",
-"Rcategorie": "Highway",
+"Rcategorie": "Arterial Road (classified as a Highway)",
 
 
         "RD_NAME": "Great Ocean Road"
@@ -25347,7 +25347,7 @@ var HIGHWAYS = {
       "type": "Feature",
       "properties": {
         "DEC_TYPE": "HIGHWAY",
-"Rcategorie": "Highway",
+"Rcategorie": "Arterial Road (classified as a Highway)",
 
 
         "RD_NAME": "Great Ocean Road"
@@ -27364,7 +27364,7 @@ var HIGHWAYS = {
       "type": "Feature",
       "properties": {
         "DEC_TYPE": "HIGHWAY",
-"Rcategorie": "Highway",
+"Rcategorie": "Arterial Road (classified as a Highway)",
 
 
         "RD_NAME": "Great Ocean Road"
@@ -28649,7 +28649,7 @@ var HIGHWAYS = {
       "type": "Feature",
       "properties": {
         "DEC_TYPE": "HIGHWAY",
-"Rcategorie": "Highway",
+"Rcategorie": "Arterial Road (classified as a Highway)",
 
 
         "RD_NAME": "Great Ocean Road"
@@ -28706,7 +28706,7 @@ var HIGHWAYS = {
       "type": "Feature",
       "properties": {
         "DEC_TYPE": "HIGHWAY",
-"Rcategorie": "Highway",
+"Rcategorie": "Arterial Road (classified as a Highway)",
 
 
         "RD_NAME": "Great Ocean Road"
@@ -28755,7 +28755,7 @@ var HIGHWAYS = {
       "type": "Feature",
       "properties": {
         "DEC_TYPE": "HIGHWAY",
-"Rcategorie": "Highway",
+"Rcategorie": "Arterial Road (classified as a Highway)",
 
 
         "RD_NAME": "Great Ocean Road"
