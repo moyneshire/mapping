@@ -131,7 +131,7 @@ geojsonLayerBoundary.addTo(map);
 	
 	
 	
-	const LinesLayer = L.geoJSON([Roads, Highways],{
+	const LinesLayer = L.geoJSON([Roads, Highways, Moyne],{
 		
 		onEachFeature,
 		
@@ -149,7 +149,14 @@ geojsonLayerBoundary.addTo(map);
           color: "black",
 			"weight": 4,
         };
-            } else {
+            }
+	  else if (ftype  === "MoyneROAD") {
+        return {
+          color: "green",
+			"weight": 4,
+        };
+            }
+	  else {
         return {
           color: "black"
         }
