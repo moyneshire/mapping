@@ -81,7 +81,7 @@
 	
 	<div id="map"></div>
 	
-	<script src="roads3geo.js" type="text/javascript"></script>
+	<script src="roadsgeo.js" type="text/javascript"></script>
 	
 	
 
@@ -131,7 +131,7 @@ geojsonLayerBoundary.addTo(map);
 	
 	
 	
-	const LinesLayer = L.geoJSON([Roads, Highways, Moyne],{
+	const LinesLayer = L.geoJSON([Roads, Highways],{
 		
 		onEachFeature,
 		
@@ -149,8 +149,7 @@ geojsonLayerBoundary.addTo(map);
           color: "black",
 			"weight": 4,
         };
-            }
-	  else {
+            } else {
         return {
           color: "black"
         }
