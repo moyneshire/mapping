@@ -1,0 +1,9 @@
+#mapid {
+  height: 180px;
+}
+
+.circle {
+  background: #0000ff;
+  border-radius: 50%;
+}
+
